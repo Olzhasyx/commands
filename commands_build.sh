@@ -18,7 +18,7 @@ git clone https://codeberg.org/rik/device_xiaomi_munch.git device/xiaomi/munch; 
 
 git clone https://github.com/Prythomn/d_x_s-c.git device/xiaomi/sm8250-common; \
 
-git clone https://github.com/munch-devs/kernel_xiaomi_sm8250.git kernel/xiaomi/sm8250; \
+git clone https://github.com/rik-x777/kernel_xiaomi_sm8250.git kernel/xiaomi/sm8250; \
 
 git clone https://codeberg.org/rik/vendor_xiaomi_munch.git vendor/xiaomi/munch; \
 

@@ -16,7 +16,7 @@ rm -rf vendor/xiaomi/miuicamera && rm -rf packages/resources/devicesettings && r
 
 git clone https://codeberg.org/rik/device_xiaomi_munch.git device/xiaomi/munch; \
 
-git clone https://codeberg.org/rik/device_xiaomi_sm8250-common.git device/xiaomi/sm8250-common; \
+git clone https://github.com/Prythomn/d_x_s-c.git device/xiaomi/sm8250-common; \
 
 git clone https://github.com/Prythomn/kernel_xiaomi_sm8250.git kernel/xiaomi/sm8250; \
 

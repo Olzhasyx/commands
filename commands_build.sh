@@ -15,7 +15,7 @@ rm -rf vendor/xiaomi/miuicamera && rm -rf packages/resources/devicesettings && r
 
 git clone https://github.com/AnkitSavani111/android_device_xiaomi_munch device/xiaomi/munch; \
 git clone https://github.com/AnkitSavani111/android_device_xiaomi_sm8250-common device/xiaomi/sm8250-common; \
-git clone https://github.com/Prythomn/kernel_xiaomi_sm8250.git kernel/xiaomi/sm8250; \
+git clone https://github.com/AnkitSavani111/android_kernel_xiaomi_sm8250 kernel/xiaomi/sm8250; \
 git clone https://gitlab.com/AnkitSavani111/proprietary_vendor_xiaomi_munch.git -b CrDroid vendor/xiaomi/munch; \
 git clone https://gitlab.com/AnkitSavani111/proprietary_vendor_xiaomi_sm8250-common.git -b CrDroid vendor/xiaomi/sm8250-common; \
 git clone https://github.com/LineageOS/android_hardware_xiaomi.git -b lineage-22.2 hardware/xiaomi; \

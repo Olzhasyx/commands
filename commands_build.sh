@@ -13,19 +13,20 @@ rm -rf out/target/product/munch && rm -rf device/xiaomi/munch && rm -rf device/x
 rm -rf vendor/xiaomi/munch && rm -rf vendor/xiaomi/sm8250-common && rm -rf hardware/xiaomi && rm -rf vendor/xiaomi/munch-firmware; \
 rm -rf vendor/xiaomi/miuicamera && rm -rf packages/resources/devicesettings && rm -rf packages/apps/ViPER4AndroidFX; \
 
-git clone https://github.com/AnkitSavani111/android_device_xiaomi_munch device/xiaomi/munch; \
-git clone https://github.com/AnkitSavani111/android_device_xiaomi_sm8250-common device/xiaomi/sm8250-common; \
+git clone https://github.com/Prythomn/-HD-android_device_xiaomi_munch.git device/xiaomi/munch; \
+
 git clone https://github.com/AnkitSavani111/android_kernel_xiaomi_sm8250 kernel/xiaomi/sm8250; \
-git clone https://gitlab.com/AnkitSavani111/proprietary_vendor_xiaomi_munch.git -b CrDroid vendor/xiaomi/munch; \
-git clone https://gitlab.com/AnkitSavani111/proprietary_vendor_xiaomi_sm8250-common.git -b CrDroid vendor/xiaomi/sm8250-common; \
-git clone https://github.com/LineageOS/android_hardware_xiaomi.git -b lineage-22.2 hardware/xiaomi; \
+
+git clone https://github.com/Prythomn/-hd-android_vendor_xiaomi_munch.git vendor/xiaomi/munch; \
+
+git clone https://github.com/Prythomn/-HD-android_hardware_xiaomi.git hardware/xiaomi; \
+
 git clone https://codeberg.org/munch-devs/android_vendor_xiaomi_miuicamera.git -b vic vendor/xiaomi/miuicamera; \
-git clone https://codeberg.org/rik/packages_resources_devicesettings.git packages/resources/devicesettings; \
+
 git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX.git packages/apps/ViPER4AndroidFX; \
 
 rm -rf vendor/lineage-priv/keys && rm -rf vendor/infinity-priv/keys; \
 
-git clone https://codeberg.org/rik/keys.git vendor/lineage-priv/keys; \
 #git clone https://codeberg.org/rik/keys.git -b inf vendor/infinity-priv/keys; \
 
 . build/envsetup.sh; \

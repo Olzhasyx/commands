@@ -32,7 +32,7 @@ rm -rf vendor/xiaomi/miuicamera && rm -rf packages/resources/devicesettings && r
 
 # HdZungx trees
 git clone https://github.com/Prythomn/-HD-android_device_xiaomi_munch device/xiaomi/munch; \
-git clone https://github.com/munch-devs/kernel_xiaomi_sm8250.git -b perf kernel/xiaomi/munch; \
+git clone https://github.com/munch-devs/kernel_xiaomi_sm8250.git -b perf kernel/xiaomi/sm8250; \
 git clone https://github.com/munch-devs/android_vendor_xiaomi_munch.git vendor/xiaomi/munch; \
 git clone https://github.com/munch-devs/android_hardware_xiaomi.git hardware/xiaomi; \
 

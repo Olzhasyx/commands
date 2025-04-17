@@ -36,8 +36,10 @@ git clone https://github.com/munch-devs/kernel_xiaomi_sm8250.git -b perf kernel/
 git clone https://github.com/munch-devs/android_vendor_xiaomi_munch.git vendor/xiaomi/munch; \
 git clone https://github.com/munch-devs/android_hardware_xiaomi.git hardware/xiaomi; \
 
-# Build infinity-x
-. b*/e* && lunch infinity_munch-userdebug && mka bacon
+# Build evox
+. build/envsetup.sh; \
+lunch lineage_munch-bp1a-userdebug; \
+m evolution; \
 
 #rm -rf vendor/lineage-priv/keys && rm -rf vendor/infinity-priv/keys; \
 

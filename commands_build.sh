@@ -2,6 +2,7 @@
 
 rm -rf .repo/local_manifests; \
 
+# Init rom
 repo init -u https://github.com/Evolution-X/manifest -b vic --git-lfs
 #repo init --depth=1 -u https://github.com/LineageOS/android.git -b lineage-22.1 --git-lfs; \
 #repo init --depth=1 -u https://github.com/crdroidandroid/android -b 15.0 --git-lfs; \
@@ -10,8 +11,10 @@ repo init -u https://github.com/Evolution-X/manifest -b vic --git-lfs
 #repo init --depth=1 -u https://github.com/RisingOS-Revived/android -b fifteen --git-lfs; \
 #repo init -u https://github.com/AxionAOSP/android.git -b lineage-22.2 --git-lfs; \
 
+# sync
 /opt/crave/resync.sh; \
 
+# Remove old folders
 rm -rf out/target/product/munch && rm -rf device/xiaomi/munch && rm -rf device/xiaomi/sm8250-common && rm -rf kernel/xiaomi/sm8250; \
 rm -rf vendor/xiaomi/munch && rm -rf vendor/xiaomi/sm8250-common && rm -rf hardware/xiaomi && rm -rf vendor/xiaomi/munch-firmware; \
 rm -rf vendor/xiaomi/miuicamera && rm -rf packages/resources/devicesettings && rm -rf packages/apps/ViPER4AndroidFX; \
@@ -33,6 +36,7 @@ git clone https://github.com/munch-devs/kernel_xiaomi_sm8250.git -b perf kernel/
 git clone https://github.com/munch-devs/android_vendor_xiaomi_munch.git vendor/xiaomi/munch; \
 git clone https://github.com/munch-devs/android_hardware_xiaomi.git hardware/xiaomi; \
 
+# Build infinity-x
 . b*/e* && lunch infinity_munch-userdebug && mka bacon
 
 #rm -rf vendor/lineage-priv/keys && rm -rf vendor/infinity-priv/keys; \

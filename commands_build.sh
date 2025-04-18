@@ -12,7 +12,10 @@ rm -rf vendor/xiaomi/munch && rm -rf vendor/xiaomi/sm8250-common && rm -rf hardw
 rm -rf vendor/xiaomi/miuicamera && rm -rf packages/resources/devicesettings && rm -rf packages/apps/ViPER4AndroidFX; \
 
 git clone https://github.com/Olzhasyx/ccache.git; \
+cd ccache; \
 bash ccache.sh; \
+cd ..; \
+rm -rf ccache; \
 
 git clone https://codeberg.org/rik/device_xiaomi_munch.git device/xiaomi/munch; \
 git clone https://github.com/Olzhasyx/android_device_xiaomi_sm8250.git device/xiaomi/sm8250-common; \

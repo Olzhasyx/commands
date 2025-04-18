@@ -24,4 +24,4 @@ rm -rf vendor/lineage-priv/keys && rm -rf vendor/infinity-priv/keys; \
 git clone https://codeberg.org/rik/keys.git vendor/lineage-priv/keys; \
 
 . build/envsetup.sh; \
-lunch lineage_codename-bp1a-userdebug && m evolution
+lunch lineage_munch-bp1a-userdebug && m evolution

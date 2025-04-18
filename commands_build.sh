@@ -14,7 +14,7 @@ git clone https://codeberg.org/rik/device_xiaomi_munch.git device/xiaomi/munch; 
 git clone https://github.com/Olzhasyx/adxsm8250 device/xiaomi/sm8250-common; \
 git clone https://codeberg.org/rik/kernel_xiaomi_sm8250.git kernel/xiaomi/sm8250; \
 git clone https://codeberg.org/rik/vendor_xiaomi_munch.git vendor/xiaomi/munch; \
-git clone https://codeberg.org/rik/vendor_xiaomi_sm8250-common.git vendor/xiaomi/sm8250-common; \
+git clone https://github.com/Olzhasyx/vxsm8250-common.git vendor/xiaomi/sm8250-common; \
 git clone https://github.com/LineageOS/android_hardware_xiaomi.git -b lineage-22.1 hardware/xiaomi; \
 git clone https://codeberg.org/rik/vendor_xiaomi_munch-firmware.git vendor/xiaomi/munch-firmware; \
 git clone https://codeberg.org/munch-devs/android_vendor_xiaomi_miuicamera.git -b vic vendor/xiaomi/miuicamera; \

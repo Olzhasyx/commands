@@ -18,6 +18,8 @@ git clone https://github.com/munch-devs/android_vendor_xiaomi_munch.git vendor/x
 
 git clone https://github.com/munch-devs/android_hardware_xiaomi.git hardware/xiaomi; \
 
+git clone https://github.com/PocoF3Releases/packages_resources_devicesettings.git packages/resources/devicesettings; \
+
 git clone https://codeberg.org/munch-devs/android_vendor_xiaomi_miuicamera.git -b vic vendor/xiaomi/miuicamera; \
 
 git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX.git packages/apps/ViPER4AndroidFX; \

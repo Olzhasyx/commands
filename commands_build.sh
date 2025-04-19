@@ -35,4 +35,3 @@ git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX.git packages
 riseup munch userdebug; \
 rise b
 ##########
-###########

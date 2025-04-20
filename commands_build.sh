@@ -3,7 +3,7 @@
 rm -rf .repo/local_manifests; \
 
 #repo init --depth=1 -u https://github.com/PixelOS-AOSP/manifest.git -b fifteen --git-lfs
-repo init --depth=1 -u https://github.com/RisingOS-Revived/android -b qpr2 --git-lfs; \
+repo init --depth=1 -u https://github.com/Evolution-X/manifest -b vic --git-lfs; \
 
 /opt/crave/resync.sh; \
 
@@ -32,6 +32,12 @@ git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX.git packages
 ##########
 
 # RisingOS Revived
-riseup munch userdebug; \
-rise b
+#riseup munch userdebug; \
+#rise b
 ##########
+
+# EvoX
+git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys && cd vendor/evolution-priv/keys && ./keys.sh && croot; \
+
+lunch lineage_munch-bp1a-userdebug; \
+m evolution

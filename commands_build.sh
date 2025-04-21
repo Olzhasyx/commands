@@ -28,7 +28,7 @@ git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX.git packages
 rm -rf vendor/evolution-priv/keys; \
 git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys && cd vendor/evolution-priv/keys && ./keys.sh && croot; \
 
-. build/envsetup.sh; \
+. b*/e*; \
 lunch lineage_munch-bp1a-userdebug; \
 m evolution
 ##########

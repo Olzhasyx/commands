@@ -13,7 +13,7 @@ rm -rf vendor/xiaomi/miuicamera && rm -rf packages/resources/devicesettings && r
 
 git clone https://github.com/Olzhasyx/-hdzung-android_device_xiaomi_munch.git device/xiaomi/munch; \
 
-git clone https://github.com/Pureline-Kernel/kernel_xiao_sm8250.git kernel/xiaomi/sm8250; \
+git clone https://github.com/rik-x777/kernel_xiaomi_sm8250.git kernel/xiaomi/sm8250; \
 
 git clone https://github.com/munch-devs/android_vendor_xiaomi_munch.git vendor/xiaomi/munch; \
 

@@ -2,7 +2,8 @@
 
 rm -rf .repo/local_manifests; \
 
-repo init --depth=1 -u https://github.com/PixelOS-AOSP/manifest.git -b fifteen --git-lfs
+#repo init --depth=1 -u https://github.com/PixelOS-AOSP/manifest.git -b fifteen --git-lfs
+repo init -u https://github.com/yaap/manifest.git -b fifteen --git-lfs
 
 /opt/crave/resync.sh; \
 
@@ -26,6 +27,7 @@ git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX.git packages
 export BUILD_USERNAME=olzhas0986
 export BUILD_HOSTNAME=crave
 source build/envsetup.sh; \
-lunch aosp_munch-bp1a-user; \
-mka bacon
+#lunch aosp_munch-bp1a-user; \
+#mka bacon
+lunch yaap_munch-bp1a && m yaap
 

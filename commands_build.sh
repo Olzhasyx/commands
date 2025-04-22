@@ -16,7 +16,7 @@ git clone https://github.com/munch-devs/kernel_xiaomi_sm8250.git kernel/xiaomi/m
 
 git clone https://github.com/munch-devs/android_vendor_xiaomi_munch.git vendor/xiaomi/munch; \
 
-git clone https://github.com/munch-devs/android_hardware_xiaomi.git hardware/xiaomi; \
+git clone https://github.com/Olzhasyx/android_hardware_xiaomi.git hardware/xiaomi; \
 
 git clone https://github.com/PocoF3Releases/packages_resources_devicesettings.git packages/resources/devicesettings; \
 

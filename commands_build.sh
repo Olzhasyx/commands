@@ -23,7 +23,8 @@ git clone https://github.com/PocoF3Releases/packages_resources_devicesettings.gi
 git clone https://codeberg.org/munch-devs/android_vendor_xiaomi_miuicamera.git -b vic vendor/xiaomi/miuicamera; \
 
 git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX.git packages/apps/ViPER4AndroidFX; \
-
+export BUILD_USERNAME=olzhas0986
+export BUILD_HOSTNAME=crave
 source build/envsetup.sh; \
 lunch aosp_munch-bp1a-user; \
 mka bacon

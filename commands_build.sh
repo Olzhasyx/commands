@@ -25,5 +25,5 @@ git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX.git packages
 export BUILD_USERNAME=olzhas0986
 
 . build/envsetup.sh; \
-riseup munch user; \
+riseup munch userdebug; \
 rise b

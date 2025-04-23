@@ -5,7 +5,7 @@ rm -rf .repo/local_manifests; \
 #repo init --depth=1 -u https://github.com/PixelOS-AOSP/manifest.git -b fifteen --git-lfs
 #repo init -u https://github.com/yaap/manifest.git -b fifteen --git-lfs
 #repo init -u https://github.com/ProjectMatrixx/android.git -b 15.0 --git-lfs; \
-repo init -u https://github.com/ProjectPixelage/android_manifest.git -b 15 --git-lfs
+repo init -u https://github.com/ProjectPixelage/android_manifest.git -b 15 --git-lfs; \
 
 /opt/crave/resync.sh; \
 

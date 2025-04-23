@@ -25,7 +25,7 @@ git clone https://github.com/munch-devs/android_hardware_xiaomi.git hardware/xia
 git clone https://github.com/PocoF3Releases/packages_resources_devicesettings.git packages/resources/devicesettings; \
 
 git clone https://codeberg.org/munch-devs/android_vendor_xiaomi_miuicamera.git -b vic vendor/xiaomi/miuicamera; \
-
+export BUILD_USERNAME=olzhas0986
 . build/envsetup.sh; \
 brunch munch
 #lunch aosp_munch-bp1a-user; \

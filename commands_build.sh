@@ -14,7 +14,7 @@ rm -rf out/target/product/munch && rm -rf device/xiaomi/munch && rm -rf device/x
 rm -rf vendor/xiaomi/munch && rm -rf vendor/xiaomi/sm8250-common && rm -rf hardware/xiaomi && rm -rf vendor/xiaomi/munch-firmware; \
 rm -rf vendor/xiaomi/miuicamera && rm -rf packages/resources/devicesettings && rm -rf packages/apps/ViPER4AndroidFX; \
 
-git clone https://github.com/Olzhasyx/adrod_device_xiaomi_munch.git device/xiaomi/munch; \
+git clone https://github.com/Pureline-Kernel/adrod_device_xiaomi_munch device/xiaomi/munch; \
 
 git clone https://github.com/munch-devs/kernel_xiaomi_sm8250.git kernel/xiaomi/munch; \
 

@@ -4,7 +4,8 @@ rm -rf .repo/local_manifests; \
 
 #repo init --depth=1 -u https://github.com/PixelOS-AOSP/manifest.git -b fifteen --git-lfs
 #repo init -u https://github.com/yaap/manifest.git -b fifteen --git-lfs
-repo init -u https://github.com/ProjectMatrixx/android.git -b 15.0 --git-lfs; \
+#repo init -u https://github.com/ProjectMatrixx/android.git -b 15.0 --git-lfs; \
+repo init -u https://github.com/ProjectPixelage/android_manifest.git -b 15 --git-lfs
 
 /opt/crave/resync.sh; \
 
@@ -12,7 +13,7 @@ rm -rf out/target/product/munch && rm -rf device/xiaomi/munch && rm -rf device/x
 rm -rf vendor/xiaomi/munch && rm -rf vendor/xiaomi/sm8250-common && rm -rf hardware/xiaomi && rm -rf vendor/xiaomi/munch-firmware; \
 rm -rf vendor/xiaomi/miuicamera && rm -rf packages/resources/devicesettings && rm -rf packages/apps/ViPER4AndroidFX; \
 
-git clone https://github.com/Olzhasyx/-hdzung-android_device_xiaomi_munch.git -b vic-los device/xiaomi/munch; \
+git clone https://github.com/Olzhasyx/-hdzung-android_device_xiaomi_munch.git device/xiaomi/munch; \
 
 git clone https://github.com/munch-devs/kernel_xiaomi_sm8250.git kernel/xiaomi/munch; \
 
@@ -28,10 +29,12 @@ git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX.git packages
 
 export BUILD_USERNAME=olzhas0986
 export BUILD_HOSTNAME=crave
+export PIXELAGE_BUILD="munch"
 
 #lunch aosp_munch-bp1a-user; \
 #mka bacon
 #lunch yaap_munch-bp1a && m yaap
 . build/envsetup.sh; \
-brunch munch
+lunch pixelage_munch-bp1a-user; \
+mka bacon
 

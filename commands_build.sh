@@ -4,9 +4,10 @@ rm -rf .repo/local_manifests; \
 
 #repo init --depth=1 -u https://github.com/PixelOS-AOSP/manifest.git -b fifteen --git-lfs
 #repo init -u https://github.com/yaap/manifest.git -b fifteen --git-lfs
-repo init -u https://github.com/ProjectMatrixx/android.git -b 15.0 --git-lfs; \
+#repo init -u https://github.com/ProjectMatrixx/android.git -b 15.0 --git-lfs; \
 #repo init -u https://github.com/ProjectPixelage/android_manifest.git -b 15 --git-lfs; \
 #repo init --depth=1 --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b 15; \
+repo init -u https://github.com/RisingOS-Revived/android -b qpr2 --git-lfs; \
 
 /opt/crave/resync.sh; \
 
@@ -27,7 +28,9 @@ git clone https://github.com/PocoF3Releases/packages_resources_devicesettings.gi
 git clone https://codeberg.org/munch-devs/android_vendor_xiaomi_miuicamera.git -b vic vendor/xiaomi/miuicamera; \
 export BUILD_USERNAME=olzhas0986
 . build/envsetup.sh; \
-brunch munch
+riseup munch user; \
+rise b
+#brunch munch
 #lunch aosp_munch-bp1a-user; \
 #mka bacon
 #lunch yaap_munch-bp1a && m yaap

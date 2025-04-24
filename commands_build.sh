@@ -2,7 +2,8 @@
 
 rm -rf .repo/local_manifests; \
 
-repo init -u https://github.com/RisingOS-Revived/android -b qpr2 --git-lfs; \
+#repo init -u https://github.com/RisingOS-Revived/android -b qpr2 --git-lfs; \
+repo init -u https://github.com/LineageOS/android.git -b lineage-22.2 --git-lfs; \
 
 /opt/crave/resync.sh; \
 
@@ -11,7 +12,7 @@ rm -rf vendor/xiaomi/miuicamera && rm -rf packages/resources/devicesettings && r
 
 git clone https://github.com/Olzhasyx/rik_munch device/xiaomi/munch; \
 git clone https://github.com/Olzhasyx/rik_sm8250-common device/xiaomi/sm8250-common; \
-git clone https://github.com/rik-x777/kernel_xiaomi_sm8250.git kernel/xiaomi/sm8250; \
+git clone https://github.com/Pureline-Kernel/pure_xiaomi_sm8250 -b backup kernel/xiaomi/sm8250; \
 git clone https://codeberg.org/rik/vendor_xiaomi_munch.git vendor/xiaomi/munch; \
 git clone https://codeberg.org/rik/vendor_xiaomi_sm8250-common.git vendor/xiaomi/sm8250-common; \
 git clone https://github.com/LineageOS/android_hardware_xiaomi.git -b lineage-22.2 hardware/xiaomi; \
@@ -23,5 +24,6 @@ git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX.git packages
 export BUILD_USERNAME=olzhas0986
 
 . build/envsetup.sh; \
-riseup munch userdebug; \
-rise b
+brunch munch
+#riseup munch userdebug; \
+#rise b

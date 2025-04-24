@@ -2,9 +2,6 @@
 
 rm -rf .repo/local_manifests; \
 
-export USE_CCACHE=1
-export CCACHE_EXEC=/usr/bin/ccache
-
 repo init -u https://github.com/RisingOS-Revived/android -b qpr2 --git-lfs; \
 
 /opt/crave/resync.sh; \

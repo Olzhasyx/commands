@@ -2,7 +2,8 @@
 
 rm -rf .repo/local_manifests; \
 
-repo init -u https://github.com/RisingOS-Revived/android --git-lfs; \
+repo init -u https://github.com/RisingOS-Revived/android -b fifteen --git-lfs; \
+#repo init -u https://github.com/RisingOS-Revived/android --git-lfs; \
 #repo init -u https://github.com/LineageOS/android.git -b lineage-22.2 --git-lfs; \
 
 /opt/crave/resync.sh; \

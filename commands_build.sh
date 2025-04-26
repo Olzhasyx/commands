@@ -2,9 +2,10 @@
 
 rm -rf .repo/local_manifests; \
 
-repo init -u https://github.com/RisingOS-Revived/android -b fifteen --git-lfs; \
+#repo init -u https://github.com/RisingOS-Revived/android -b fifteen --git-lfs; \
 #repo init -u https://github.com/RisingOS-Revived/android --git-lfs; \
 #repo init -u https://github.com/LineageOS/android.git -b lineage-22.2 --git-lfs; \
+repo init -u https://github.com/ProjectMatrixx/android.git -b 15.0 --git-lfs; \
 
 /opt/crave/resync.sh; \
 
@@ -26,9 +27,9 @@ git clone https://codeberg.org/munch-devs/android_vendor_xiaomi_miuicamera.git -
 export BUILD_USERNAME=olzhas0986
 
 . build/envsetup.sh; \
-croot && packages/modules/common/build/update-apex-allowed-deps.sh
+#croot && packages/modules/common/build/update-apex-allowed-deps.sh
 #breakfast munch; \
 #croot; \
-#brunch munch
-riseup munch userdebug; \
-rise b
+brunch munch
+#riseup munch userdebug; \
+#rise b

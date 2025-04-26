@@ -12,7 +12,7 @@ repo init -u https://github.com/ProjectMatrixx/android.git -b 15.0 --git-lfs; \
 rm -rf out/target/product/munch && rm -rf device/xiaomi/munch && rm -rf device/xiaomi/sm8250-common && rm -rf vendor/xiaomi/munch && rm -rf vendor/xiaomi/sm8250-common && rm -rf hardware/xiaomi && rm -rf vendor/xiaomi/munch-firmware; \
 rm -rf vendor/xiaomi/miuicamera && rm -rf packages/resources/devicesettings && rm -rf packages/apps/ViPER4AndroidFX && rm -rf kernel/xiaomi/munch && rm -rf kernel/xiaomi/sm8250; \
 
-git clone https://github.com/Olzhasyx/android_device_xiaomi_munch-HDZungx -b 15-qpr1 device/xiaomi/munch; \
+git clone https://github.com/Olzhasyx/android_device_xiaomi_munch -b 15-qpr1 device/xiaomi/munch; \
 
 git clone https://github.com/Pureline-Kernel/pure_xiaomi_sm8250 kernel/xiaomi/munch; \
 
@@ -26,6 +26,7 @@ git clone https://codeberg.org/munch-devs/android_vendor_xiaomi_miuicamera.git -
 
 export BUILD_USERNAME=olzhas0986
 
+sed -i 's/android\.ImageInterfaceContext/android.ModuleContext/g' system/sepolicy/build/soong/selinux_contexts.go; \
 . build/envsetup.sh; \
 #croot && packages/modules/common/build/update-apex-allowed-deps.sh
 #breakfast munch; \

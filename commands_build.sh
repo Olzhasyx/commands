@@ -26,10 +26,11 @@ git clone https://github.com/PocoF3Releases/packages_resources_devicesettings.gi
 git clone https://codeberg.org/munch-devs/android_vendor_xiaomi_miuicamera.git -b vic vendor/xiaomi/miuicamera; \
 
 export BUILD_USERNAME=olzhas0986
+export BUILD_HOST=crave
 
 #sed -i 's/android\.ImageInterfaceContext/android.ModuleContext/g' system/sepolicy/build/soong/selinux_contexts.go; \
 . build/envsetup.sh; \
-lunch lineage_munch-bp1a-userdebug
+lunch lineage_munch-bp1a-userdebug && m evolution
 #croot && packages/modules/common/build/update-apex-allowed-deps.sh
 #breakfast munch; \
 #croot; \

@@ -26,7 +26,8 @@ git clone https://codeberg.org/munch-devs/android_vendor_xiaomi_miuicamera.git -
 
 export BUILD_USERNAME=olzhas0986
 
-sed -i 's/android\.ImageInterfaceContext/android.ModuleContext/g' system/sepolicy/build/soong/selinux_contexts.go; \
+sed -i -e 's/ImageInterfaceContext/ModuleContext/g' -e 's/ModuleContext/BaseModuleContext/g' system/sepolicy/build/soong/selinux_contexts.go; \
+
 . build/envsetup.sh; \
 #croot && packages/modules/common/build/update-apex-allowed-deps.sh
 #breakfast munch; \

@@ -14,7 +14,7 @@ rm -rf vendor/xiaomi/miuicamera && rm -rf packages/resources/devicesettings && r
 
 git clone https://github.com/Olzhasyx/android_device_xiaomi_munch device/xiaomi/munch; \
 
-git clone https://github.com/Pureline-Kernel/pure_xiaomi_sm8250 kernel/xiaomi/munch; \
+git clone https://github.com/munch-devs/kernel_xiaomi_sm8250.git kernel/xiaomi/munch; \
 
 git clone https://github.com/munch-devs/android_vendor_xiaomi_munch.git vendor/xiaomi/munch; \
 
@@ -26,8 +26,6 @@ git clone https://codeberg.org/munch-devs/android_vendor_xiaomi_miuicamera.git -
 
 export BUILD_USERNAME=olzhas0986
 export BUILD_HOSTNAME=crave
-
-#sed -i -e 's/ImageInterfaceContext/ModuleContext/g' -e 's/ModuleContext/BaseModuleContext/g' system/sepolicy/build/soong/selinux_contexts.go; \
 
 . build/envsetup.sh; \
 #croot && packages/modules/common/build/update-apex-allowed-deps.sh

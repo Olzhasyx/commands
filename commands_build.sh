@@ -14,7 +14,7 @@ rm -rf .repo/local_manifests; \
 rm -rf out/target/product/munch
 rm -rf device/xiaomi/munch
 #rm -rf device/xiaomi/sm8250-common
-#rm -rf vendor/xiaomi/munch
+rm -rf vendor/xiaomi/munch
 #rm -rf vendor/xiaomi/sm8250-common
 #rm -rf hardware/xiaomi
 #rm -rf vendor/xiaomi/munch-firmware; \
@@ -28,7 +28,7 @@ git clone https://github.com/Olzhasyx/android_device_xiaomi_munch device/xiaomi/
 
 #git clone https://github.com/Pureline-Kernel/pure_xiaomi_sm8250 kernel/xiaomi/munch; \
 
-#git clone https://github.com/Olzhasyx/android_vendor_xiaomi_munch.git vendor/xiaomi/munch; \
+git clone https://github.com/Olzhasyx/android_vendor_xiaomi_munch.git vendor/xiaomi/munch; \
 
 #git clone https://github.com/Olzhasyx/android_hardware_xiaomi hardware/xiaomi; \
 

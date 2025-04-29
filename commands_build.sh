@@ -18,7 +18,7 @@ git clone https://github.com/Olzhasyx/android_device_xiaomi_munch device/xiaomi/
 
 git clone https://github.com/Pureline-Kernel/pure_xiaomi_sm8250 kernel/xiaomi/munch; \
 
-git clone https://github.com/Pureline-Kernel/android_vendor_xiaomi_munch vendor/xiaomi/munch; \
+git clone https://github.com/Olzhasyx/android_vendor_xiaomi_munch.git vendor/xiaomi/munch; \
 
 git clone https://github.com/munch-devs/android_hardware_xiaomi.git hardware/xiaomi; \
 

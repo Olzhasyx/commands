@@ -1,6 +1,7 @@
 rm -rf .repo/local_manifests; \
 
-repo init -u https://github.com/AxionAOSP/android.git -b lineage-22.2 --git-lfs; \
+repo init --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b 15 -g default,-mips,-darwin,-notdefault; \
+#repo init -u https://github.com/AxionAOSP/android.git -b lineage-22.2 --git-lfs; \
 
 /opt/crave/resync.sh; \
 
@@ -24,5 +25,5 @@ cd kernel/xiaomi/sm8250 && git submodule init && git submodule update && rm -rf 
 
 . build/envsetup.sh; \
 
-lunch lineage_munch-bp1a-user;
+lunch infinity_munch-user; \
 mka bacon

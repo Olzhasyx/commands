@@ -1,7 +1,5 @@
 rm -rf .repo/local_manifests; \
 
-#repo init --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b 15 -g default,-mips,-darwin,-notdefault; \
-#repo init -u https://github.com/AxionAOSP/android.git -b lineage-22.2 --git-lfs; \
 repo init -u https://github.com/LineageOS/android.git -b lineage-22.2 --git-lfs; \
 
 /opt/crave/resync.sh; \
@@ -11,9 +9,7 @@ rm -rf vendor/xiaomi/munch && rm -rf vendor/xiaomi/sm8250-common && rm -rf hardw
 rm -rf vendor/xiaomi/miuicamera && rm -rf packages/resources/devicesettings && rm -rf packages/apps/ViPER4AndroidFX; \
 
 git clone https://github.com/munch-devs/android_device_xiaomi_munch.git device/xiaomi/munch; \
-#git clone https://github.com/olzhas0986dev/device_xiaomi_sm8250-common device/xiaomi/sm8250-common; \
 git clone https://github.com/munch-devs/android_vendor_xiaomi_munch.git vendor/xiaomi/munch; \
-#git clone https://github.com/olzhas0986dev/vendor_xiaomi_sm8250-common.git vendor/xiaomi/sm8250-common; \
 git clone https://github.com/olzhas0986dev/kernel_xiaomi_sm8250-hd.git -b ksu-susfs kernel/xiaomi/sm8250; \
 git clone https://github.com/munch-devs/android_hardware_xiaomi.git hardware/xiaomi; \
 git clone https://github.com/PocoF3Releases/packages_resources_devicesettings packages/resources/devicesettings; \
@@ -24,5 +20,5 @@ cd kernel/xiaomi/sm8250 && git submodule init && git submodule update && rm -rf 
 
 . build/envsetup.sh; \
 
-lunch lineage_munch-user; \
+lunch lineage_munch-bp1a-user; \
 mka bacon

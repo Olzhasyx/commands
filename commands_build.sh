@@ -17,7 +17,7 @@ git clone https://codeberg.org/munch-devs/android_vendor_xiaomi_miuicamera vendo
 git clone https://github.com/olzhas0986dev/vendor_gms.git vendor/gms; \
 rm -rf vendor/lineage-priv/keys && rm -rf vendor/infinity-priv/keys; \
 
-cd kernel/xiaomi/sm8250 && git submodule init && git submodule update && rm -rf KernelSU-Next/userspace/su && cd ../../..; \
+#cd kernel/xiaomi/sm8250 && git submodule init && git submodule update && rm -rf KernelSU-Next/userspace/su && cd ../../..; \
 
 . build/envsetup.sh; \
 

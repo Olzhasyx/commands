@@ -14,7 +14,7 @@ git clone https://github.com/olzhas0986dev/device_xiaomi_munch device/xiaomi/mun
 git clone https://github.com/olzhas0986dev/device_xiaomi_sm8250-common device/xiaomi/sm8250-common; \
 git clone https://gitlab.com/rik-x777/vendor_xiaomi_munch vendor/xiaomi/munch; \
 git clone https://github.com/olzhas0986dev/vendor_xiaomi_sm8250-common vendor/xiaomi/sm8250-common; \
-git clone https://github.com/olzhas0986dev/kernel_xiaomi_sm8250-hd.git -b ksu-susfs kernel/xiaomi/sm8250; \
+git clone https://github.com/olzhas0986dev/kernel_xiaomi_sm8250.git kernel/xiaomi/sm8250; \
 git clone https://github.com/LineageOS/android_hardware_xiaomi hardware/xiaomi; \
 git clone https://github.com/PocoF3Releases/packages_resources_devicesettings packages/resources/devicesettings; \
 git clone https://codeberg.org/munch-devs/android_vendor_xiaomi_miuicamera vendor/xiaomi/miuicamera; \

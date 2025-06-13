@@ -4,7 +4,8 @@ rm -rf .repo/local_manifests; \
 #repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs; \
 #repo init -u https://github.com/LineageOS/android.git -b lineage-22.2 --git-lfs; \
 #repo init -u https://github.com/RisingOS-Revived/android -b new --git-lfs; \
-repo init -u https://github.com/Project-Mist-OS/manifest -b vic --git-lfs; \
+#repo init -u https://github.com/Project-Mist-OS/manifest -b vic --git-lfs; \
+repo init -u https://github.com/Evolution-X/manifest -b vic --git-lfs; \
 
 /opt/crave/resync.sh; \
 
@@ -31,8 +32,8 @@ cd kernel/xiaomi/sm8250 && git submodule init && git submodule update && rm -rf 
 #riseup munch user; \
 #rise b; \
 
-#lunch lineage_munch-bp1a-user; \
-#mka bacon
+lunch lineage_munch-bp1a-user; \
+m evolution
 
-mistify munch user; \
-mist b 
+#mistify munch user; \
+#mist b 
